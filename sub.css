@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+
+
+p { 
+	font-family: 'Bebas Neue', cursive;
+font-family: 'Playfair Display', serif;
+}
+body {
+
+	background-color: rgb(253, 0, 139);
+	margin: 20pt;
+	text-align: center;
+}
+#gallery {
+	line-height:1;
+	-webkit-column-count:5;
+	-webkit-column-gap:5px; 
+	-moz-column-count:5;
+	-moz-column-gap:5px;
+	column-count:6;
+	column-gap:5px;
+ }
+
+ #gallery img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 3px; 
+	filter: grayscale(100%);
+	
+ }
+
+ @media (max-width: 1200px) {
+	#gallery {
+	 -moz-column-count:    4;
+	 -webkit-column-count: 4;
+	 column-count:         4;
+	}
+ }
+ #gallery img:hover {
+	filter:none;
+ }
+
+
+.content {
+
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	border: 4px;
+	border-color: black;
+	border-style: groove;
+	background-color: aliceblue; 
+	margin-bottom: 7px;
+	margin-top: 5px;
+}
